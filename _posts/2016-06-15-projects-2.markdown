@@ -1,0 +1,13 @@
+---
+layout: default
+img: twitter.png
+category: projects
+title: Sentiment Analysis of Tweets<br>to Predict TV Show Ratings
+description: |
+---
+  * Produced a package for automated Twitter data mining (SAS, SQL)
+  * Predicted IMDB television ratings through sentiment analysis of TV show tweets (Python, SAS, SQL)
+  
+  [Package Code](https://github.com/ilitton/Tweetomatic)
+ 
+  [Report](http://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1057&context=statsp)

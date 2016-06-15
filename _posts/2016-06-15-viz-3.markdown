@@ -1,0 +1,12 @@
+---
+layout: default
+img: netflix.png
+category: viz
+title: Google Trends for<br>Netflix Shows
+description: |
+---
+This visualization is an interactive map of Google Trends Search Volumes for Netflix shows.
+
+The values represent the search volume relative to the highest point on the map which is always 100.
+
+[Visualization](https://bl.ocks.org/ilitton/raw/da922988dab876bbb8367adc802da745/)

@@ -1,0 +1,15 @@
+---
+layout: default
+img: cardetection.png
+category: projects
+title: Machine Learning:<br>Car Detection
+description: |
+---
+  Built AdaBoost function from scratch that classified cars in dashcam videos with an accuracy of 99.8% (Python, OpenCV, AWS) 
+  
+   
+  [Code](https://github.com/CaptainDataCrunch/ObjectDetection)
+ 
+  [Presentation](https://github.com/CaptainDataCrunch/ObjectDetection/blob/master/Car%20Detection%20Using%20Adaboost.pdf)
+  
+  [Demo](https://www.youtube.com/watch?v=XCPRrZx2IcE&feature=youtu.be)

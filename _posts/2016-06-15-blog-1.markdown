@@ -1,0 +1,14 @@
+---
+layout: default
+img: usf.png
+category: blog
+title: University of San Francisco:<br>Master's in Analytics Program
+description: |
+---
+The Master of Science in Analytics ([MSAN](https://www.usfca.edu/arts-sciences/graduate-programs/analytics/program-details)) is a one year program with courses including:
+
+  * Text mining
+  * Machine learning
+  * Statistical modeling 
+  * Predictive analytics
+  * and much much more...

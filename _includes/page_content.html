@@ -1,6 +1,6 @@
 <section id="projects">
 <!-- Page Content -->
-{% for post in site.posts reversed %}
+{% for post in site.categories.projects reversed %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="content-section-a">
@@ -15,7 +15,7 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                    <img class="img-responsive" src="img/projects/{{ post.img }}" alt="">
                 </div>
             </div>
 
@@ -38,7 +38,7 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/services/{{ post.img }}" alt="">
+                  <img class="img-responsive" src="img/projects/{{ post.img }}" alt="">
                 </div>
             </div>
 
@@ -50,3 +50,120 @@
     {% endif %}
 {% endfor %}
 </section>
+
+<section id="visualizations">
+<!-- Page Content -->
+{% for post in site.categories.viz reversed %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/visualizations/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <img class="img-responsive" src="img/visualizations/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+{% endfor %}
+</section>
+
+<section id="blog">
+<!-- Page Content -->
+{% for post in site.categories.blog reversed %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/blog/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{ post.title }}</h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <img class="img-responsive" src="img/blog/{{ post.img }}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+{% endfor %}
+</section>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78613810-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
