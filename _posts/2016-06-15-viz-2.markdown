@@ -6,9 +6,10 @@ title: Captain America Civil War:<br>Character Viz
 description: |
 ---
 This visualization is an exploration of Civil War characters and determines which side would win based on random categories such as:
-* Number of lines in film scripts
-* Gross revenue of films
-* Total weight
-* Total height
+
+  * Number of lines in film scripts
+  * Gross revenue of films
+  * Total weight
+  * Total height
 
 [Visualization](https://bl.ocks.org/ilitton/raw/e345c2051f084d32dd8d44a82d0850fa/)
