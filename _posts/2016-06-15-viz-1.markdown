@@ -1,6 +1,7 @@
 ---
 layout: default
 img: appstore.png
+demo_url: https://bl.ocks.org/ilitton/raw/799600f3b994493399b33e993f668da2/#
 category: viz
 title: Apple App Store:<br>Sentiment Analysis Viz
 description: |

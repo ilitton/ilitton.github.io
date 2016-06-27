@@ -2,6 +2,7 @@
 layout: default
 img: cap.jpeg
 category: viz
+demo_url: https://bl.ocks.org/ilitton/raw/e345c2051f084d32dd8d44a82d0850fa/
 title: Captain America Civil War:<br>Character Viz
 description: |
 ---

@@ -1,3 +1,34 @@
+<!-- Load the Content Experiment JavaScript API client for the experiment -->
+<script src="//www.google-analytics.com/cx/api.js?experiment=2HE62ZuKSAKvZyMOWCrKYQ"></script>
+
+<script>
+  // Ask Google Analytics which variation to show the user.
+  var chosenVariation = cxApi.chooseVariation();
+</script>
+  
+<!-- Load the JQuery library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+// Define JavaScript for each page variation of this experiment.
+var pageVariations = [
+  function() {},  // Original: Do nothing. This will render the default HTML.
+  function() {    // Variation 1: Banner Image
+	  jQuery('.navbar-nav [href="#projects"]').parent().before(jQuery('.navbar-nav [href="#visualizations"]').parent());
+	  jQuery('footer [href="#projects"]').parent().before(jQuery('footer [href="#visualizations"]').parent());
+  },
+  function() {    // Variation 2: Sub-heading Text
+    document.getElementById('heading').innerHTML = 'Look, a Bridge!';
+  }
+];
+
+// Wait for the DOM to load, then execute the view for the chosen variation.
+$(document).ready(
+  // Execute the chosen view
+  pageVariations[chosenVariation]
+);
+</script>
+
 <section id="projects">
 <!-- Page Content -->
 {% for post in site.categories.projects reversed %}
@@ -15,7 +46,7 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/projects/{{ post.img }}" alt="">
+                    <img class="img-responsive section-side-img" src="img/projects/{{ post.img }}" alt="">
                 </div>
             </div>
 
@@ -38,7 +69,7 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/projects/{{ post.img }}" alt="">
+                  <img class="img-responsive section-side-img" src="img/projects/{{ post.img }}" alt="">
                 </div>
             </div>
 
@@ -78,7 +109,9 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/visualizations/{{ post.img }}" alt="">
+					<a href="{{ post.demo_url }}" target="_BLANK">
+						<img class="img-responsive section-side-img" src="img/visualizations/{{ post.img }}" alt="">
+					</a>					
                 </div>
             </div>
 
@@ -101,7 +134,9 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/visualizations/{{ post.img }}" alt="">
+					<a href="{{ post.demo_url }}" target="_BLANK">
+						<img class="img-responsive section-side-img" src="img/visualizations/{{ post.img }}" alt="">
+					</a>
                 </div>
             </div>
 
@@ -141,7 +176,7 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/blog/{{ post.img }}" alt="">
+                    <img class="img-responsive section-side-img" src="img/blog/{{ post.img }}" alt="">
                 </div>
             </div>
 
@@ -164,7 +199,7 @@
                     <div class="lead">{{ post.content }}</div>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/blog/{{ post.img }}" alt="">
+                  <img class="img-responsive section-side-img" src="img/blog/{{ post.img }}" alt="">
                 </div>
             </div>
 

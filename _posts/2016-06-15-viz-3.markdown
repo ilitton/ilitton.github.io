@@ -2,6 +2,7 @@
 layout: default
 img: netflix.png
 category: viz
+demo_url: https://bl.ocks.org/ilitton/raw/da922988dab876bbb8367adc802da745/
 title: Google Trends for<br>Netflix Shows
 description: |
 ---
